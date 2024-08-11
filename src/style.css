@@ -1,0 +1,39 @@
+img {
+    width: 1000px;
+    height: auto;
+}
+
+.pic-slide {
+    width: 1000px;
+}
+.carousel-container {
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.picture-container {
+    display: flex;
+    overflow: hidden;
+    width: 1000px;
+}
+
+.prev-btn, .next-btn {
+    height: 50px;
+    width: 50px;
+}
+
+.prev-btn {
+    background-image: url("menu-left.svg");
+}
+
+.next-btn {
+    background-image: url("menu-right.svg");
+}
+
+button {
+    background-color: transparent;
+}

@@ -40,6 +40,7 @@
     "graceful-fs": "^4.2.11",
     "has-flag": "^4.0.0",
     "hasown": "^2.0.2",
+    "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.0",
     "import-local": "^3.2.0",
     "interpret": "^3.1.1",
