@@ -1,4 +1,4 @@
-img {
+.pic-slide > img {
     width: 1000px;
     height: auto;
 }
@@ -6,9 +6,11 @@ img {
 .pic-slide {
     width: 1000px;
 }
+
 .carousel-container {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .hidden {
@@ -17,8 +19,18 @@ img {
 
 .picture-container {
     display: flex;
-    overflow: hidden;
-    width: 1000px;
+/*    overflow: hidden;*/
+    align-items: center;
+}
+
+.img-nav-dots > img {
+    width: 50px;
+    height: auto;
+}
+
+.img-nav-dots > svg {
+    width: 50px;
+    height: auto;
 }
 
 .prev-btn, .next-btn {
@@ -36,4 +48,8 @@ img {
 
 button {
     background-color: transparent;
+}
+
+svg.selected path {
+    fill: blue;
 }
