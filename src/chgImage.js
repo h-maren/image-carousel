@@ -16,12 +16,17 @@ allImages.forEach((item,index) => {
 let showNextImage = (function () {
     console.log(shownImageIndex);
     if(shownImageIndex===(allImagesLength-1)){
-        allImages[4].classList.add("hidden");
+        allImages[allImagesLength-1].classList.add("hidden");
+        imageNavDots[allImagesLength-1].classList.remove("selected");
         allImages[0].classList.remove("hidden");
+        imageNavDots[0].classList.add("selected");
         shownImageIndex=0;
+        allImages
     } else {
         allImages[shownImageIndex].classList.add("hidden");
+        imageNavDots[shownImageIndex].classList.remove("selected");
         allImages[shownImageIndex+1].classList.remove("hidden");
+        imageNavDots[shownImageIndex+1].classList.add("selected");
         shownImageIndex++;
     }
 });
@@ -29,12 +34,16 @@ let showNextImage = (function () {
 let showPrevImage = (function () {
     console.log(shownImageIndex);
     if(shownImageIndex===0){
-        allImages[4].classList.remove("hidden");
+        allImages[allImagesLength-1].classList.remove("hidden");
+        imageNavDots[allImagesLength-1].classList.add("selected");
         allImages[0].classList.add("hidden");
+        imageNavDots[0].classList.remove("selected");
         shownImageIndex=4;
     } else {
         allImages[shownImageIndex].classList.add("hidden");
+        imageNavDots[shownImageIndex].classList.remove("selected");
         allImages[shownImageIndex-1].classList.remove("hidden");
+        imageNavDots[shownImageIndex-1].classList.add("selected");
         shownImageIndex--;
     }
 });

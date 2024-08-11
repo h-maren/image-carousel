@@ -15,3 +15,5 @@ imageNavDots.forEach((dot,index) => {
     dot.classList.add(`index-${index}`);
     dot.setAttribute('data-index',index);
 });
+
+setInterval(showNextImage,5000);
